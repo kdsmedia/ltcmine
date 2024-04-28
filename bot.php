@@ -108,7 +108,7 @@ sruput();
 strip();
 
 
-$url = "https://mineltc.cf/user/home";
+$url = "https://autofaucet.dutchycorp.space/miner.php";
 $ua = ["user-agent: ".$useragent,
 "cookie: ".$cookie];
 $d = Get($url, $ua);
@@ -122,7 +122,7 @@ if($expire == '00:00:00'){
 echo$red."Your session has expired, please do shortlink before run this bot!\n";
 exit;
 }else{
-$url = "https://mineltc.cf/user/home";
+$url = "https://autofaucet.dutchycorp.space/miner.php";
 $ua = ["user-agent: ".$useragent,
 "cookie: ".$cookie];
 $d = Get($url, $ua);
@@ -139,12 +139,12 @@ strip();
 
 while(true){
 
-$url = "https://mineltc.cf/user/home";
+$url = "https://autofaucet.dutchycorp.space/miner.php";
 $ua = ["user-agent: ".$useragent,
 "cookie: ".$cookie];
 $d = Get($url, $ua);
 
-$url = "https://mineltc.cf/user/pay";
+$url = "https://autofaucet.dutchycorp.space/miner.php";
 $ua = ["user-agent: ".$useragent,
 "cookie: ".$cookie];
 $av = Get($url, $ua);
@@ -155,7 +155,7 @@ $ava = "$two[0]";
 if($ava > $withdraw){
 
 
-$url = "https://mineltc.cf/user/pay";
+$url = "https://autofaucet.dutchycorp.space/miner.php";
 $ua = ["user-agent: ".$useragent,
 "cookie: ".$cookie];
 $av = Get($url, $ua);
@@ -163,14 +163,14 @@ $one = explode('<small>Available for payout <h2 class="text-center"><span> ',$av
 $two = explode('   </span>',$one[1]);
 $ava = "$two[0]";
 
-$link = "https://mineltc.cf/user/pay";
+$link = "https://autofaucet.dutchycorp.space/miner.php";
 $data = "amount=$withdraw&fpay=";
 $fp = Post($link, $ua, $data);
 
 echo$yellow.$withdraw." LTC sent to your ".$blue."Faucet".$cyan."Pay".$yellow." account!\n";
 sleep(1);
 
-$url = "https://mineltc.cf/user/pay";
+$url = "https://autofaucet.dutchycorp.space/miner.php";
 $ua = ["user-agent: ".$useragent,
 "cookie: ".$cookie];
 $av = Get($url, $ua);
@@ -190,7 +190,7 @@ echo "\r \r";
 sleep(1);} 			
 }
 
-$url = "https://mineltc.cf/inc/data.php";
+$url = "https://autofaucet.dutchycorp.space/miner.php";
 $ua = ["user-agent: ".$useragent,
 "cookie: ".$cookie];
 $coll = Get($url, $ua);
@@ -206,17 +206,17 @@ sleep(1);}
 			
 }else{
 
-$url = "https://mineltc.cf/user/mining";
+$url = "https://autofaucet.dutchycorp.space/miner.php";
 $ua = ["user-agent: ".$useragent,
 "cookie: ".$cookie];
 $m = Get($url, $ua);
 
-$url = "https://mineltc.cf/user/home";
+$url = "https://autofaucet.dutchycorp.space/miner.php";
 $ua = ["user-agent: ".$useragent,
 "cookie: ".$cookie];
 $d = Get($url, $ua);
 
-$url = "https://mineltc.cf/inc/data.php";
+$url = "https://autofaucet.dutchycorp.space/miner.php";
 $ua = ["user-agent: ".$useragent,
 "cookie: ".$cookie];
 $coll = Get($url, $ua);
@@ -224,7 +224,7 @@ $coll = Get($url, $ua);
 echo$green."Success collect ".$coll." LTC to your main balance!\n";
 sleep(2);
 
-$url = "https://mineltc.cf/user/pay";
+$url = "https://autofaucet.dutchycorp.space/miner.php";
 $ua = ["user-agent: ".$useragent,
 "cookie: ".$cookie];
 $av = Get($url, $ua);
